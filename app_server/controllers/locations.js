@@ -13,7 +13,7 @@ module.exports.homelist = function(req, res) {
 			address: '125 High Street, Reading, RG6 1PS',
 			facilities: ['Hot drinks', 'Foods', 'Premium wifi'] 
 		},{
-			name: 'Del taco',
+			name: 'Del Taco',
 			rating: 2,
 			distance: '150m',
 			address: '125 High Street, Reading, RG6 1PS',
@@ -21,7 +21,7 @@ module.exports.homelist = function(req, res) {
 		},{
 			name: "Denny's",
 			rating: 3,
-			distance: '100m',
+			distance: '200m',
 			address: '125 High Street, Reading, RG6 1PS',
 			facilities: ['Hot drinks', 'Foods', 'Premium wifi'] 
 		}] 
