@@ -1,5 +1,11 @@
 extends layout
 
+mixin outputRating(rating)
+  - for(i=0; i<rating; i++)
+    span.glyphicon.glyphicon-star
+  - for(i=rating; i<5; i++)
+    span.glyphicon.glyphicon-star-empty
+
 block content
   #banner.page-header
     .row
@@ -15,10 +21,7 @@ block content
             h4
               a(href="/location")= location.name
               small &nbsp;
-                - for(var i=0; i<location.rating; i++)
-                  span.glyphicon.glyphicon-star
-                - for(i=location.rating; i<5; i++)
-                  span.glyphicon.glyphicon-star-empty             
+                +outputRating(location.rating)
               span.badge.pull-right.badge-default= location.distance
             p.address= location.address
             p
