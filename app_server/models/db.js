@@ -20,7 +20,7 @@ mongoose.connection.on('connected', function() {
 	console.log('Mongoose connected to ' + dbURI);
 });
 mongoose.connection.on('error', function() {
-	console.log('Mongoose connection error:  ' + err);
+	console.log('Mongoose connection error');
 });
 mongoose.connection.on('disconnected', function() {
 	console.log('Mongoose disconnected');
