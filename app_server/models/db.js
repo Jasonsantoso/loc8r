@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var dbURI = 'mongodb://localhost/Loc8r';
+var dbURI = 'mongodb://jason:santoso@ds145312.mlab.com:45312/loc8r';
 mongoose.connect(dbURI);
 
 /* --- Monitoring when app stops using SIGINT --- */

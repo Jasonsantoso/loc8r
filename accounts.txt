@@ -1,0 +1,20 @@
+== Heroku ==
+Email: santoso.jason13@gmail.com
+Password: jasons13
+
+== mLab ==
+Account Name: Loc8rJsn
+Username: Jsn
+Email: santoso.jason13@gmail.com
+Password: jasons13
+
+Database Name: loc8r
+User: jason
+password: santoso
+Server Address: ds145312.mlab.com
+Port: 45312
+
+dbURI:
+mongodb://jason:santoso@ds145312.mlab.com:45312/loc8r
+
+
