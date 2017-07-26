@@ -17,4 +17,13 @@ Port: 45312
 dbURI:
 mongodb://jason:santoso@ds145312.mlab.com:45312/loc8r
 
+mongorestore -h ds145312.mlab.com:45312 -d loc8r -u Jsn -p jasons13 ~/tmp/mongodump/Loc8r
+
+To connect using the mongo shell:
+mongo ds145312.mlab.com:45312/loc8r -u Jsn -p jasons13
+
+To connect using a driver via the standard MongoDB URI (what's this?):
+
+mongodb://<dbuser>:<dbpassword>@ds145312.mlab.com:45312/loc8r
+
 
