@@ -2,6 +2,10 @@
 Email: santoso.jason13@gmail.com
 Password: jasons13
 
+== Github ==
+Email: santoso.jason13@gmail.com
+Password: jasons13
+
 == mLab ==
 Account Name: Loc8rJsn
 Username: Jsn
@@ -14,16 +18,18 @@ password: santoso
 Server Address: ds145312.mlab.com
 Port: 45312
 
+=============
 dbURI:
-mongodb://jason:santoso@ds145312.mlab.com:45312/loc8r
+mongodb://jason:jasons13@ds145312.mlab.com:45312/loc8r
 
-mongorestore -h ds145312.mlab.com:45312 -d loc8r -u Jsn -p jasons13 ~/tmp/mongodump/Loc8r
+mongodump -h localhost:27017 -d loc8r -o ~/tmp/mongodump
+
+mongorestore -h ds145312.mlab.com:45312 -d loc8r -u jason -p santoso ~/tmp/mongodump/Loc8r
 
 To connect using the mongo shell:
-mongo ds145312.mlab.com:45312/loc8r -u Jsn -p jasons13
+mongo ds145312.mlab.com:45312/loc8r -u jason -p santoso
 
 To connect using a driver via the standard MongoDB URI (what's this?):
 
 mongodb://<dbuser>:<dbpassword>@ds145312.mlab.com:45312/loc8r
-
-
+==============

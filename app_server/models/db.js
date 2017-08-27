@@ -1,6 +1,12 @@
 var mongoose = require('mongoose');
 
-var dbURI = 'mongodb://jason:santoso@ds145312.mlab.com:45312/loc8r';
+var dbURI = 'mongodb://localhost/loc8r';
+if (process.env.NODE_ENV === 'production') {
+	dbURI = 'mongodb://jason:santoso@ds145312.mlab.com:45312/loc8r';
+	// 'mongodb://jason:santoso@ds145312.mlab.com:45312/loc8r'
+	// process.env.MONGOLAB_URI
+}
+
 mongoose.connect(dbURI);
 
 /* --- Monitoring when app stops using SIGINT --- */
@@ -18,6 +24,7 @@ if (process.platform === "win32") {
 /* --- Monitoring connection --- */
 mongoose.connection.on('connected', function() {
 	console.log('Mongoose connected to ' + dbURI);
+	console.log(process.env.NODE_ENV);
 });
 mongoose.connection.on('error', function() {
 	console.log('Mongoose connection error');
